@@ -6,3 +6,32 @@ h4{
 	color: green;
 	background-color: red;
 }
+
+h1{
+	color: darkblue;
+    background-color: whitesmoke;
+}
+
+h4{
+	background-color: ghostwhite;
+}
+
+p{
+	color: saddlebrown;
+	background-color: palegoldenrod;
+}
+
+h3{
+	color: darkslateblue;
+    background-color: lightgrey;
+}
+
+ul{
+	color: navy;
+	background-color: ghostwhite;
+}
+
+mark{
+	color: saddlebrown;
+	background-color: lightgrey;
+}
