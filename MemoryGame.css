@@ -1,0 +1,38 @@
+/* Colors:
+
+#B5EAD7 - Blue
+#C7CEEA - Indigo
+#7E88AF - Dark Indigo
+#E2F0CB - Green
+#FFDAC12 - Orange
+#FFB7B - Pink
+#FF9AA2 - Red
+
+*/
+
+#nav li
+{
+	display: inline;
+	font-size: 25px;
+}
+
+#nav li a
+{
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: #C7CEEA;
+}
+
+#navBar
+{
+	background-color: #7E88AF;
+	margin-top: none;
+	width: 100%;
+}
+
+body
+{
+	font-family: 'Chewy', cursive;
+	margin: none;
+}

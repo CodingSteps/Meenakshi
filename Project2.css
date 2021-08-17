@@ -1,0 +1,12 @@
+.overFlow
+{
+	background-color: lightgrey;
+	width: 200px;
+	height: 100px;
+	overflow: scroll /* visible, hidden, scroll, auto*/
+}
+
+img
+{
+	float: left;
+}
