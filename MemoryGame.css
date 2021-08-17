@@ -14,12 +14,15 @@
 {
 	display: inline;
 	font-size: 25px;
+	margin-top: 10px;
 }
 
 #nav li a
 {
 	text-align: center;
 	padding: 14px 16px;
+	padding-top: 20px;
+	margin-top: 10px;
 	text-decoration: none;
 	color: #C7CEEA;
 }
@@ -28,6 +31,8 @@
 {
 	background-color: #7E88AF;
 	width: 100%;
+	text-align: right;
+	height: 80px;
 }
 
 body
