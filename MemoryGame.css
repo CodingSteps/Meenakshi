@@ -27,12 +27,16 @@
 #navBar
 {
 	background-color: #7E88AF;
-	margin-top: none;
 	width: 100%;
 }
 
 body
 {
 	font-family: 'Chewy', cursive;
-	margin: none;
+	margin: 0px;
+}
+
+#nav
+{
+	margin: 0px;
 }
