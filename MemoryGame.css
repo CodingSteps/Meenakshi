@@ -9,6 +9,7 @@
 #ffb7b2 - Pink
 #FF9AA2 - Red
 #ff9ea4 - Medium Red
+#ff848a - Translucent Medium Red
 #ff7780 - Dark Red
 
 */
@@ -65,7 +66,33 @@ body
 
 #evenMoreContainer
 {
+	position: relative;
 	margin: auto;
+}
+
+#container
+{
+	position: absolute;
+	text-align: center;
+	left: 28%;
+	font-size: 25px;
+}
+
+#title
+{
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	letter-spacing: 3px;
+	border-bottom: 4px solid white;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-top: 10px;
+}
+
+h1
+{
+	padding-top: 30px;
 }
 
 #text1:hover {background-color: #FF9AA2;}
@@ -75,3 +102,5 @@ body
 #text5:hover {background-color: #B5EAD7;}
 
 #nav li a:hover {color: #7E88AF;}
+
+.cards:hover {background-color: #ff848a;}
