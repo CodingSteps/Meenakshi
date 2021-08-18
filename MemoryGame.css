@@ -3,10 +3,13 @@
 #B5EAD7 - Blue
 #C7CEEA - Indigo
 #7E88AF - Dark Indigo
+#5c6ca8 - Very Dark Indigo
 #E2F0CB - Green
 #ffdac1 - Orange
 #ffb7b2 - Pink
 #FF9AA2 - Red
+#ff9ea4 - Medium Red
+#ff7780 - Dark Red
 
 */
 
@@ -15,6 +18,8 @@
 	display: inline;
 	font-size: 35px;
 	margin-bottom: 10px;
+	height: 80px;
+	padding: 18px 16px;
 }
 
 #nav li a
@@ -30,12 +35,14 @@
 	width: 100%;
 	text-align: right;
 	height: 80px;
+	border-bottom: 3px solid #5c6ca8;
 }
 
 body
 {
 	font-family: 'Chewy', cursive;
 	margin: 0px;
+	background-color: #FF9AA2;
 }
 
 #nav
@@ -43,6 +50,22 @@ body
 	margin: 0px;
 	margin-right: 15px;
 	padding-top: 17px;
+}
+
+.cards
+{
+	display: inline-block;
+	background-color: #ff7780;
+	color: whitesmoke;
+	width: 200px;
+	height: 200px;
+	margin-right: 17px;
+	border-radius: 20px;
+}
+
+#evenMoreContainer
+{
+	margin: auto;
 }
 
 #text1:hover {background-color: #FF9AA2;}
