@@ -65,7 +65,7 @@ body
 	position: relative;
 }
 
-#container2
+#smTxt2
 {
 	position: absolute;
 	top: 40%;
@@ -73,7 +73,7 @@ body
 	padding: 20px;
 }
 
-#smTxt2
+#container2
 {	
 	color: white;
 	height: 10%;
