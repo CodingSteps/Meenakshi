@@ -3,6 +3,7 @@ header
 	background-color: lightblue;
 	overflow: auto;
 	padding: 30px;
+	margin: 0px;
 	margin-bottom: 20px;
 }
 
@@ -23,7 +24,7 @@ h1
 
 #img2
 {
-	border-radius: 30px;
+	border-radius: 20%;
 	float: right;
 	width: 500px;
 	height: 300px;
@@ -50,7 +51,7 @@ h1
 
 body
 {
-	line-height: 35px;
+	line-height: 38px;
 	font-size: 25px;
 	font-family: 'Patrick Hand', cursive;
 }
