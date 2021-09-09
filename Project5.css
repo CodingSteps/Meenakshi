@@ -31,17 +31,25 @@ body
 	height: 70px;
 }
 
-#navBar ul
+#navBar
 {
 	margin-top: 0px;
+	padding-top: 10px;
 }
 
-#navBar ul li
+#navBar li
 {
-	float: right;
-}
-
-#navBar a
-{
+	float: left;
+	padding: 15px;
 	list-style-type: none;
+	padding-top: 16px;
+	font-size: 25px;
 }
+
+#navBar li a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#navBar li:hover{background-color: darkgrey;}
