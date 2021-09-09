@@ -1,3 +1,12 @@
+h1
+{
+	margin-top: 0px;
+	color: white;
+	position: absolute;
+	top: 30%;
+	right: 42%;
+}
+
 body
 {
 	margin-top: 0px;
@@ -9,6 +18,30 @@ body
 {
 	width: 100%;
 	margin-top: 0px;
-	height: 150px;
+	height: 120px;
 	background-color: steelblue;
+	position: relative;
+}
+
+#navBar
+{
+	margin-top: 0px;
+	width: 100%;
+	background-color: darkturquoise;
+	height: 70px;
+}
+
+#navBar ul
+{
+	margin-top: 0px;
+}
+
+#navBar ul li
+{
+	float: right;
+}
+
+#navBar a
+{
+	list-style-type: none;
 }
