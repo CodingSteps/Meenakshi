@@ -59,10 +59,21 @@ body
 
 #listed
 {
-	width: 500px;
+	clear: left;
+	width: 30%;
 	margin-left: 15px;
 	padding: 10px;
-	background-color: #d5f4e6; /*A pale shade of green*/
+}
+
+#listedList
+{
+	float: left;
+}
+
+#flight, #city, #island, #food, #people, #history, #oceans
+{
+	background-color: #d5f4e6;  /*A pale shade of green*/
+	width: 100%;
 }
 
 #listed li
