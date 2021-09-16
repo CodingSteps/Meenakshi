@@ -39,6 +39,7 @@ body
 	list-style-type: none;
 	padding-top: 16px;
 	font-size: 25px;
+	float: left;
 }
 
 #navBar li a
@@ -56,9 +57,10 @@ body
 {
 	float: left;
 	clear: left;
-	width: 30%;
+	width: 15%;
 	margin-left: 15px;
 	padding: 10px;
+	margin-top: 0px;
 }
 
 #flight, #city, #island, #food, #people, #history, #oceans
@@ -67,17 +69,32 @@ body
 	width: 100%;
 }
 
-#listed li
+#listedList li
 {
 	border-bottom: 3px solid white;
 	list-style-type: none;
 	padding: 15px;
+	text-align: center;
+	font-size: 15px;
 }
 
-#listed li a
+#listedList li a
 {
 	text-decoration: none;
 	color: slategray;
 }
 
+#city
+{
+	background-color: paleturquoise;
+}
+
+#theTitle
+{
+	width: 70%;
+	background-color: steelblue;
+	height: 20%;
+}
+
 #navBar li:hover{background-color: darkgrey;}
+#listedList li:hover{background-color: lightgrey;}
