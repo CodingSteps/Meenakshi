@@ -39,7 +39,6 @@ body
 
 #navBar li
 {
-	float: left;
 	padding: 15px;
 	list-style-type: none;
 	padding-top: 16px;
@@ -57,17 +56,13 @@ body
 	background-color: darkseagreen;
 }
 
-#listed
+#listedList
 {
+	float: left;
 	clear: left;
 	width: 30%;
 	margin-left: 15px;
 	padding: 10px;
-}
-
-#listedList
-{
-	float: left;
 }
 
 #flight, #city, #island, #food, #people, #history, #oceans
@@ -80,6 +75,7 @@ body
 {
 	border-bottom: 3px solid white;
 	list-style-type: none;
+	padding: 15px;
 }
 
 #listed li a
