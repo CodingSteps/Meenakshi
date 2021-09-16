@@ -12,6 +12,7 @@ body
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
+	position: relative;
 }
 
 #header
@@ -91,6 +92,10 @@ body
 
 #theTitle
 {
+	clear: left;
+	float: right;
+	position: absolute;
+	top: 100%;
 	width: 70%;
 	background-color: steelblue;
 	height: 20%;
