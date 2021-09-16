@@ -52,4 +52,29 @@ body
 	color: white;
 }
 
+#highLight
+{
+	background-color: darkseagreen;
+}
+
+#listed
+{
+	width: 500px;
+	margin-left: 15px;
+	padding: 10px;
+	background-color: #d5f4e6; /*A pale shade of green*/
+}
+
+#listed li
+{
+	border-bottom: 3px solid white;
+	list-style-type: none;
+}
+
+#listed li a
+{
+	text-decoration: none;
+	color: slategray;
+}
+
 #navBar li:hover{background-color: darkgrey;}
