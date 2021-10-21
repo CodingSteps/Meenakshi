@@ -1,0 +1,32 @@
+#animatedDiv
+{
+	width: 500px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	padding: 30px;
+	padding-top: 65px;
+	background-color: darkturquoise;
+	
+	animation-name: animated;
+	animation-duration: 15s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes animated{
+	0%{background-color: mediumpurple; transform: translate(0px,0px);}
+	25%{background-color: greenyellow; transform: translate(250px,0px);}
+	50%{background-color: lightpink; transform: translate(500px,0px);}
+	75%{background-color: palevioletred; transform: translate(1000px,0px);}
+	100%{background-color: lightyellow; transform: translate(1250px,0px);}
+}
+
+#animatedDiv:hover{
+	transform: rotate(45deg);
+	width: 550px;
+	height: 150px;
+	transition: width 5s, height 10s, transform 15s;
+	transition-delay: 5s;
+}
