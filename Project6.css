@@ -24,9 +24,9 @@
 }
 
 #animatedDiv:hover{
-	/*transform: rotate(45deg);
-	width: 550px;*/
+	transform: rotate(45deg);
+	width: 550px;
 	height: 150px;
-	transition: height 3s;
+	transition: height 3s, width 3s, transform 3s;
 	
 }
