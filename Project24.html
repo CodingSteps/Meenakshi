@@ -22,12 +22,12 @@
 	<br>
 
 	<label for="radioYes">Yes</label>
-	<input type="radio" id="radioYes" class="radioButtons" name="radioButton">
+	<input type="radio" class="radioButtons" name="radioButton">
 
 	<br>
 
 	<label for="radioNo">No</label>
-	<input type="radio" id="radioNo" class="radioButtons" name="radioButton">
+	<input type="radio" class="radioButtons" name="radioButton">
 
 	<br>
 	<br>
@@ -44,8 +44,10 @@
 				let age = $('#yourAge').val();
 				let oldEnough;
 
-				let yesOrNo = $('#radioButtons').val();
+				let yesOrNo = $('.radioButtons').val();
 				let supervised;
+
+				alert(yesOrNo);
 
 				if (yesOrNo==="Yes")
 				{
