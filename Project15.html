@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery - Hide/Show</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div style="width: 250px; margin: auto; margin-top: 370px;">
+
+		<h1>This is a heading.</h1>
+
+			<button id="show">Hide/Show</button>
+			<!-- <br>
+			<br>
+			<button id="hide">Hide</button>-->
+
+	</div>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			/* $('#hide').click(function(){
+
+				$('h1').fadeOut(1000,function(){
+					alert("The heading has been hidden.")
+				});
+
+			});
+
+
+			$('#show').click(function(){
+
+				$('h1').fadeIn(1000,function(){
+					alert("The heading has been shown.")
+				});
+
+			}); */
+
+			$('#show').click(function(){
+
+				$('h1').toggle(1000,function(){
+					alert("The heading has been shown/hidden.")
+				});
+
+			});
+
+		});
+
+	</script>
+
+</body>
+</html>

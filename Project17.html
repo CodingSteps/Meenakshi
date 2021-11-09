@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Functions</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		// Write the same program using callback function setTimeout and display the output in the webpage after 5 secs.
+		
+		const numberGenerator = () => {
+		
+			return Math.floor(Math.random() * 10);
+
+		};
+
+		const numberMultiplier = (num1,num2) => {
+
+			let answer = num1 * num2();
+			alert(answer);
+
+		};
+
+		setTimeout(numberMultiplier,5000,2,numberGenerator);
+
+	</script>
+
+</body>
+</html>

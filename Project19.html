@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery and Functions</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Using JQUERY functions slideUp, slideDown, slideToggle hide and show the paragraph element.
+	Also write callback function to change CSS property after the operation.-->
+
+	<div style="width: 250px; margin: auto; margin-top: 360px;">
+
+		<h1>This is a heading.</h1>
+
+		<br>
+
+		<button id="up" style="margin-left: 7px;">Slide Up</button>
+
+		<button id="fadeOut" style="margin-left: 20px;">Fade Out</button>
+
+		<button id="hide" style="margin-left: 20px;">Hide</button>
+
+		<br>
+		<br>
+
+		<button id="down">Slide Down</button>
+
+		<button id="fadeIn" style="margin-left: 15px;">Fade In</button>
+
+		<button id="show" style="margin-left: 22px;">Show</button>
+
+	</div>
+
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+
+				$('#up').click(function(){
+					$('h1').slideUp(1000,function(){
+						$('#fadeIn').css('color','black');
+						$('#down').css('color','black');
+						$('#show').css('color','black');
+
+						$('#fadeOut').css('color','black');
+						$('#up').css('color','red');
+						$('#hide').css('color','black');
+					});
+				});
+
+				$('#fadeIn').click(function(){
+					$('h1').fadeIn(1000,function(){
+						$('#fadeIn').css('color','limegreen');
+						$('#down').css('color','black');
+						$('#show').css('color','black');
+
+						$('#fadeOut').css('color','black');
+						$('#up').css('color','black');
+						$('#hide').css('color','black');
+					});
+				});
+
+				$('#hide').click(function(){
+					$('h1').hide(1000,function(){
+						$('#fadeIn').css('color','black');
+						$('#down').css('color','black');
+						$('#show').css('color','black');
+
+						$('#fadeOut').css('color','black');
+						$('#up').css('color','black');
+						$('#hide').css('color','red');
+					});
+				});
+
+				$('#down').click(function(){
+					$('h1').slideDown(1000,function(){
+						$('#fadeIn').css('color','black');
+						$('#down').css('color','limegreen');
+						$('#show').css('color','black');
+
+						$('#fadeOut').css('color','black');
+						$('#up').css('color','black');
+						$('#hide').css('color','black');
+					});
+				});
+
+				$('#fadeOut').click(function(){
+					$('h1').fadeOut(1000,function(){
+						$('#fadeIn').css('color','black');
+						$('#down').css('color','black');
+						$('#show').css('color','black');
+
+						$('#fadeOut').css('color','red');
+						$('#up').css('color','black');
+						$('#hide').css('color','black');
+					});
+				});
+
+				$('#show').click(function(){
+					$('h1').show(1000,function(){
+						$('#fadeIn').css('color','black');
+						$('#down').css('color','black');
+						$('#show').css('color','limegreen');
+
+						$('#fadeOut').css('color','black');
+						$('#up').css('color','black');
+						$('#hide').css('color','black');
+					});
+				});
+
+			});
+
+	</script>
+
+</body>
+</html>

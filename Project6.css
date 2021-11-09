@@ -16,17 +16,50 @@
 }
 
 @keyframes animated{
-	0%{background-color: mediumpurple; transform: translate(0px,0px);}
-	25%{background-color: greenyellow; transform: translate(250px,0px);}
-	50%{background-color: lightpink; transform: translate(500px,0px);}
-	75%{background-color: palevioletred; transform: translate(1000px,0px);}
-	100%{background-color: lightyellow; transform: translate(1250px,0px);}
+	0%{background-color: mediumpurple; position: relative; left: 0px;}
+	25%{background-color: greenyellow; position: relative; left: 250px;}
+	50%{background-color: lightpink; position: relative; left: 500px;}
+	75%{background-color: palevioletred; position: relative; left: 1000px;}
+	100%{background-color: lightyellow; position: relative; left: 1250px;}
 }
 
 #animatedDiv:hover{
 	transform: rotate(45deg);
 	width: 550px;
 	height: 150px;
-	transition: height 3s, width 3s, transform 3s;
-	
+	transition: height 3s, width 3s, transform 3s;	
+}
+
+#box
+{
+	width: 500px;
+	height: 500px;
+
+	border-style: dotted;
+	border-width: thick;
+	border-color: darkmagenta;
+
+	margin-left: 50px;
+}
+
+#ball
+{
+	width: 40px;
+	height: 40px;
+	background-color: blueviolet;
+	margin: 5px;
+
+	animation-name: ballMove;
+	animation-duration: 15s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes ballMove{
+	0%{background-color: mediumpurple; position: relative; bottom: 0px;}
+	25%{background-color: greenyellow; position: relative; top: 500px;}
+	50%{background-color: lightpink; position: relative; left: 500px;}
+	75%{background-color: palevioletred; position: relative; left: 1000px;}
+	100%{background-color: lightyellow; position: relative; left: 1250px;}
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Automated Ticket Checker</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body style="text-align: center;">
+
+	<h1>Automated Ticket Checker</h1>
+
+	<label for="yourAge">Your Age:</label>
+	<input type="text" id="yourAge"/>
+
+	<br>
+	<br>
+	<br>
+
+	<label>Are you accompanied by an adult? (Answer only if your age is under 13.)</label>
+
+	<br>
+	<br>
+
+	<label for="radioYes">Yes</label>
+	<input type="radio" id="radioYes" class="radioButtons" name="radioButton">
+
+	<br>
+
+	<label for="radioNo">No</label>
+	<input type="radio" id="radioNo" class="radioButtons" name="radioButton">
+
+	<br>
+	<br>
+	<br>
+
+	<button id="submit">Check Entry</button>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			$('#submit').click(function(){
+
+				let age = $('#yourAge').val();
+				let oldEnough;
+
+				let yesOrNo = $('#radioButtons').val();
+				let supervised;
+
+				if (yesOrNo==="Yes")
+				{
+					supervised = true;
+				}
+				else
+				{
+					supervised = false;
+				}
+
+				if (age<13)
+				{
+					oldEnough = false;
+				}
+				else
+				{
+					oldEnough = true;
+				}
+
+				if (oldEnough)
+				{
+					console.log("You are allowed to watch this movie. Enjoy!");
+				}
+				else if (oldEnough===false && supervised)
+				{
+					console.log("You are allowed to watch this movie. Enjoy!");
+				}
+				else
+				{
+					console.log("You are not allowed to watch this movie. Adult supervision is required.");
+				}
+			});
+
+		});
+
+	</script>
+
+
+</body>
+</html>
