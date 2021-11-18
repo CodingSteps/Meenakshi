@@ -106,4 +106,20 @@ body
 		flex: 100%;
 		flex-direction: column;
 	}
+
+	#imageDiv h1
+	{
+		font-size: 50px;
+	}
+
+	#imageDiv span
+	{
+		font-size: 15px;
+	}
+
+	#imageDiv a
+	{
+		font-size: 20px;
+	}
+
 }
