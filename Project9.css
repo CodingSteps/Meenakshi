@@ -14,6 +14,12 @@ body
 	background-position: center;
 	background-attachment: fixed;
 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+
 	margin: 0px;
 }
 
@@ -29,11 +35,19 @@ body
 	background-attachment: fixed;
 
 	margin: 0px;
+
+	font-family: 'Architects Daughter', cursive;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
 }
 
 #imageDiv h1
 {
-	font-size: 50px;
+	font-size: 60px;
 	font-family: 'Architects Daughter', cursive;
 	color: #926239;
 
@@ -42,7 +56,7 @@ body
 
 #imageDiv span
 {
-	font-size: 20px;
+	font-size: 25px;
 	font-family: 'Architects Daughter', cursive;
 	color: #926239;
 }
@@ -50,7 +64,7 @@ body
 #imageDiv a
 {
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'Architects Daughter', cursive;
 	color: #926239;
 
@@ -62,6 +76,26 @@ body
 #flexImageDiv
 {
 	text-align: center;
+}
 
+#hundredBrown, #thirtyBrown1, #thirtyBrown2
+{
+	background-color: #926239;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+}
+
+#hundredWhite, #thirtyWhite
+{
+	background-color: white;
+	color: #926239;
+	font-size: 20px;
+	padding: 20px;
+}
+
+.parts
+{
 	flex: 30%;
+
 }
