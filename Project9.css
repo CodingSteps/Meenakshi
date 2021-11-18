@@ -97,5 +97,13 @@ body
 .parts
 {
 	flex: 30%;
+}
 
+@media screen and (max-width: 1200px)
+{
+	.parts
+	{
+		flex: 100%;
+		flex-direction: column;
+	}
 }
