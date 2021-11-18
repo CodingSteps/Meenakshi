@@ -25,15 +25,19 @@ body
 
 #imageDiv2
 {
-	width: 100%;
+
 	height: 975px;
+	width: 100%;
 
 	background-image: url("Images/Sea.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+}
 
+#flexImageDiv2
+{
 	margin: 0px;
 
 	font-family: 'Architects Daughter', cursive;
