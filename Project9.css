@@ -34,6 +34,10 @@ body
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
 }
 
 #flexImageDiv2
