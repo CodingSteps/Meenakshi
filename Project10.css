@@ -1,3 +1,8 @@
+*
+{
+	box-sizing: border-box;
+}
+
 body
 {
 	margin: 0px;
@@ -24,9 +29,77 @@ body
 	position: relative;
 }
 
-#title i
+#imgText
 {
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
+	margin: 15px;
+}
+
+#secondDiv
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+#picDiv2
+{
+	background-image: url(https://codingsteps.github.io/WebProg/images/tablesetting1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	height: 500px;
+	margin: 60px;
+
+	flex: 0 1 30%;
+}
+
+#textDiv
+{
+	text-align: center;
+	line-height: 18px;
+	letter-spacing: 1px;
+
+	height: 500px;
+
+	flex: 0 1 30%;
+
+	margin: 40px;
+	padding: 40px;
+}
+
+#thirdDiv
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+#textDiv2
+{
+	line-height: 18px;
+	letter-spacing: 1px;
+
+	height: 500px;
+
+	flex: 0 1 30%;
+}
+
+#picDiv3
+{
+	background-image: url(https://codingsteps.github.io/WebProg/images/tablesetting2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	height: 500px;
+
+	flex: 0 1 30%;
 }
