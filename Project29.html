@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Guess the Number!</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+
+	<!-- In this program, you will develop a guessing game.  A number will be randomly generated from 1 to 10.  You can use the code:  
+
+		/let num = Math.floor(Math.random() * 10 + 1);  //assigns to num a number from 1 to 10
+
+	The user will try to guess the number.  When the user finally gets the number, you have to tell them how many guesses it took.
+
+	For example, let us assume the randomly generated number is 8 (remember it can be any number from 1 to 10 and the value will change every time you re-load the page). The user will always first see a prompt with the text: “I am thinking of a number from 1 to 10, guess the number.”
+
+	Let us assume, that the user enters 9.  Since this is the wrong answer, the user will see a prompt with the text “Wrong, guess again:” Let us assume, that the user now enters 2.  Since this is also the wrong answer, the user will again see a prompt with the text “Wrong, guess again:” Let us now assume, that the user enters 8.  Since this is the correct answer, the user will see the alert box with the text
+
+		You got it with 3 guess(es).  The number was: 8
+
+	Of course, if the user had not said 8 on the third try, the “Wrong, guess again:” prompt would have come up instead of the alert box.  Assuming the user got it after 5 guesses, then the alert box would have said: 
+
+		You got it with 5 guess(es).  The number was: 8
+
+	The user can re-load the page and play the game again. -->
+
+	<script type="text/javascript">
+
+		let number = Math.floor(Math.random() * 10 + 1);
+		let guessCount = 1;	
+		let guess = Number(prompt("I am thinking of a number from 1 to 10, guess the number!"));
+
+		while(guess !== number)
+		{
+			guess = Number(prompt("Wrong, guess again!"));
+
+			guessCount++;
+		}
+
+		if(guess === number)
+		{
+			alert(`You got it with ${guessCount} guess(es)! The number was: ${number}.`);
+		}
+
+	</script>
+
+
+
+</body>
+</html>

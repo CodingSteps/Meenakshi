@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Multiplication Tables</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body style="text-align: center;">
+
+	<h1>The Multiplier</h1>
+	<h2 id="outputText"></h2>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			let number;
+			let answer = 0;
+
+			let times = Number(prompt("Kindly enter a number."))
+
+			if(isNaN(times))
+			{
+				alert("ERROR: Your input is not a number.");
+			}
+
+			const theMultiplier = (x) =>
+			{
+    			for(let number = 1 ; number <= 10 ; number++)
+    			{
+    				answer = answer + x;
+    				$('#outputText').append(`${times} x ${number} = ${answer}`);
+
+    				let breakElement = $("<br>");
+    				$('#outputText').append(breakElement);
+
+    			}
+			}
+
+			theMultiplier(times);
+
+		});
+
+	</script>
+
+</body>
+</html>

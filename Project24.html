@@ -35,6 +35,11 @@
 
 	<button id="submit">Check Entry</button>
 
+	<br>
+	<br>
+
+	<h2 id="output"></h2>
+
 	<script type="text/javascript">
 		
 		$(document).ready(function(){
@@ -47,14 +52,6 @@
 				let yesOrNo = $('.radioButtons:checked').val();
 				let supervised;
 
-				if (yesOrNo==="Yes")
-				{
-					supervised = true;
-				}
-				else
-				{
-					supervised = false;
-				}
 
 				if (age<13)
 				{
@@ -65,18 +62,46 @@
 					oldEnough = true;
 				}
 
-				if (oldEnough)
+
+				if (yesOrNo==="Yes")
 				{
-					console.log("You are allowed to watch this movie. Enjoy!");
+					supervised = true;
 				}
-				else if (oldEnough===false && supervised)
+				else if(yesOrNo==="No")
 				{
-					console.log("You are allowed to watch this movie. Enjoy!");
+					supervised = false;
+				}
+				else if(yesOrNo!=="Yes" && yesOrNo!=="No")
+				{
+					supervised = "";
+				}
+
+
+				if(age==="" && supervised==="")
+				{
+					alert("Kindly fill in the form.")
+				}
+				else if(isNaN(age) || age==="")
+				{
+					alert("Kindly enter your age as a number.");
+				}
+				else if(age<13 && supervised==="")
+				{
+					alert("Kindly check the radio buttons.");
+				}
+				else if(oldEnough===false && supervised)
+				{
+					$('#output').html("You are allowed to watch this movie. Enjoy!");
+				}
+				else if(oldEnough)
+				{
+					$('#output').html("You are allowed to watch this movie. Enjoy!");
 				}
 				else
 				{
-					console.log("You are not allowed to watch this movie. Adult supervision is required.");
+					$('#output').html("You are not allowed to watch this movie. Adult supervision is required.");
 				}
+
 			});
 
 		});

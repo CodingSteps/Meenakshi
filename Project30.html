@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<!-- The main function is given below:
+		function main()
+		{
+			let inputStr = prompt("Enter word: ");
+			let count = Number(prompt("Enter count: ")); stringMaker(inputStr, count);
+		}
+	You can assume that count will be a positive integer.
+	You need to write the code for the stringMaker function (does not have a return value). stringMaker will print to the webpage inputStr, count times. However, every other printing of inputStr will be reversed. For example, if inputStr is hello and count is 5, the output will be:
+
+		hello olleh hello olleh hello
+
+	stringMaker will call another function, reverse, that you will write. The reverse function will take one string argument and return the reverse of the string. The reverse function needs to use a loop to come up with the reverse string by concatenating one character at a time.
+	A couple of things to help you out. First, strings have a property called length, that can tell you have many characters are in a string. For example:
+ 
+		let myStr = "hello"; alert(myStr.length); // will display 5
+
+	Second, you can initialize a variable to the empty string, which is just "" (notice no space). This will tell JavaScript that your variable is a string and allow you to start concatenating.
+	Third, you can use the method charAt to get the character at an index (the first character is at index 0 not 1). For example:
+
+		let myStr = "hello";
+
+		alert(myStr.charAt(0)); // will display h
+		alert(myStr.charAt(1)); // will display e
+		alert(myStr.charAt(4)); // will display o -->
+
+		<script type="text/javascript">
+
+		function main()
+		{
+			let inputStr = prompt("Enter word: ");
+			let count = Number(prompt("Enter count: "));
+			stringMaker(inputStr, count);
+		}
+
+		function stringMaker(word,count)
+		{
+			for(let number = 1,number<=count,number++)
+			{
+				word = word + word;
+			}
+		}
+
+		main();
+
+		</script>
+
+</body>
+</html>

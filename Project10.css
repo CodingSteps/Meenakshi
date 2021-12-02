@@ -1,0 +1,22 @@
+body
+{
+	margin: 0px;
+}
+
+#title
+{
+	margin-left: 20px;
+	font-size: 40px;
+}
+
+#picDiv
+{
+	background-image: url(https://codingsteps.github.io/WebProg/images/Grilled-Vegetable-Wrap.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	margin: 0px;
+
+	width: 100%;
+	height: 600px;
+}

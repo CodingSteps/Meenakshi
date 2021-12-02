@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body style="text-align: center; padding-top: 385px;">
+
+	<!-- Prompt the user for an operator with the text "Enter an operator: " The only valid inputs are + , -, *, or /. 
+	If the user enters anything other than these 4 characters, keep re-prompting.
+
+	Next prompt for the first operand with the text "Enter the first operand: ", followed by another prompt for the second operand with the text "Enter the second operand: " (Note: An operand is just the term for the number that appears on the left or right of the operator).
+
+	If either operand is NaN (not a number), use an alert box to display the text “Error - at least one operand is NaN”
+
+	Hint: There is a function called isNaN that can help you with this. For details, do a little research and look it up. 
+
+	For example, if the input is *, 7, hi (entered one at a time for the 3 prompts), the alert box will say: 
+
+		Error - at least one operand is NaN
+
+	Otherwise, assuming both operands can be converted to numbers, do the calculation and display the result in an alert box.  For example, if the input is -, 12, 20 (entered one at a time for the 3 prompts), the alert box will say: 
+
+		12 -20 = -8
+
+	As another example, if the user re-loads the page and now enters *, 5, -2 (entered one at a time for the 3 prompts), the alert box will say: 
+
+		5 * -2 = -10
+
+	But remember that you cannot divide by zero, so if a user enters input such that operand two is 0, you should not divide. For example, for the input:  /, 5, 0 (entered one at a time for the 3 prompts), the alert box will say: 
+
+		Cannot divide by zero. -->
+
+	<h1 id="outputText"></h1>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			let answer;
+		
+			let operator = prompt("Kindly enter the operator.");
+
+			if(operator !== null)
+			{
+				while(operator !== "+" && operator !== "-" && operator !== "*" && operator !== "/")
+				{
+					operator = prompt("Kindly enter the operator (+,-,* or /).");
+
+					if(operator === null)
+					{
+						break;
+					}
+				}
+			}
+
+			let operand1 = Number(prompt("Kindly enter the first operand."));
+
+			let operand2 = Number(prompt("Kindly enter the second operand."));
+
+			if(isNaN(operand1) || isNaN(operand2))
+			{
+				alert("ERROR: At least one operand is not a number.");
+			}
+			else if(operand2 === 0)
+			{
+				alert("ERROR: Division by zero is undefined.");
+			}
+			else
+			{
+				if(operator === "+")
+				{
+					answer = operand1 + operand2;
+				}
+				else if(operator === "-")
+				{
+				answer = operand1 - operand2;
+				}
+				else if(operator === "*")
+				{
+				answer = operand1 * operand2;
+				}
+				else if(operator === "/")
+				{
+					answer = operand1 / operand2;
+				}
+			}
+
+			if(operator === "+")
+			{
+				$('#outputText').html(operand1 + " + " + operand2 + " = " + answer);
+			}
+			else if(operator === "-")
+			{
+				$('#outputText').html(operand1 + " - " + operand2 + " = " + answer);
+			}
+			else if(operator === "*")
+			{
+				$('#outputText').html(operand1 + " * " + operand2 + " = " + answer);
+			}
+			else if(operator === "/")
+			{
+				$('#outputText').html(operand1 + " / " + operand2 + " = " + answer);
+			}
+
+		});
+
+	</script>
+
+</body>
+
+</html>
