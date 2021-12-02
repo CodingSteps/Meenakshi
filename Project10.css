@@ -54,7 +54,7 @@ body
 	background-position: center;
 
 	height: 500px;
-	margin: 60px;
+	margin-top: 60px;
 
 	flex: 0 1 30%;
 }
@@ -90,6 +90,9 @@ body
 	height: 500px;
 
 	flex: 0 1 30%;
+
+	margin: 40px;
+	padding-top: 10px;
 }
 
 #picDiv3
@@ -102,4 +105,36 @@ body
 	height: 500px;
 
 	flex: 0 1 30%;
+
+	margin-top: 40px;
+}
+
+#formsDiv
+{
+	padding-left: 15%;
+	line-height: 23px;
+}
+
+input
+{
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid #eee;
+	margin: 10px;
+	padding: 10px;
+}
+
+#submit
+{
+	border-radius: 30px;
+	margin-bottom: 70px;
+}
+
+footer
+{
+	height: 100px;
+	width: 100%;
+	background-color: #F1F1F1;
+	text-align: center;
+	padding-top: 40px;
 }
