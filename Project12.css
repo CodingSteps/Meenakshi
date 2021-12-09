@@ -125,8 +125,8 @@ body
 	transition: left 1s;
 }
 
-#about:hover{transition: left 0.3s;}
-#blog:hover{transition: left 0.3s;}
-#projects:hover{transition: left 0.3s;}
-#resources:hover{transition: left 0.3s;}
-#contact:hover{transition: left 0.3s;}
+#about:hover{left: -40px; transition: left 0.3s;}
+#blog:hover{left: -40px; transition: left 0.3s;}
+#projects:hover{left: -40px; transition: left 0.3s;}
+#resources:hover{left: -40px; transition: left 0.3s;}
+#contact:hover{left: -40px; transition: left 0.3s;}
