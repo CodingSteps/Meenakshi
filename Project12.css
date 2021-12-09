@@ -1,0 +1,132 @@
+body
+{
+	margin: 0px;
+	position: relative;
+}
+
+.sideNav
+{
+	height: 50px;
+	font-family: 'Fuzzy Bubbles', cursive;
+}
+
+#about
+{
+	position: absolute;
+	top: 210px;
+	left: -245px;
+
+	background-color: darkslateblue;
+	
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+
+	border: 5px solid indigo;
+	border-radius: 10px;
+
+	padding-top: 25px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 130px;
+
+	transition: left 1s;
+}
+
+#blog
+{
+	position: absolute;
+	top: 310px;
+	left: -245px;
+
+	background-color: dodgerblue;
+	
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+
+	border: 5px solid royalblue;
+	border-radius: 10px;
+
+	padding-top: 25px;
+	padding-bottom: 10px;
+	padding-right: 80px;
+	padding-left: 130px;
+
+	transition: left 1s;
+}
+
+#projects
+{
+	position: absolute;
+	top: 411px;
+	left: -245px;
+
+	background-color: forestgreen;
+	
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+
+	border: 5px solid darkgreen;
+	border-radius: 10px;
+
+	padding-top: 25px;
+	padding-bottom: 10px;
+	padding-right: 41px;
+	padding-left: 110px;
+
+	transition: left 1s;
+}
+
+#resources
+{
+	position: absolute;
+	top: 512.5px;
+	left: -245px;
+
+	background-color: gold;
+	
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+
+	border: 5px solid orange;
+	border-radius: 10px;
+
+	padding-top: 25px;
+	padding-bottom: 10px;
+	padding-right: 38px;
+	padding-left: 87px;
+
+	transition: left 1s;
+}
+
+#contact
+{
+	position: absolute;
+	top: 616px;
+	left: -245px;
+
+	background-color: crimson;
+	
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+
+	border: 5px solid darkred;
+	border-radius: 10px;
+
+	padding-top: 25px;
+	padding-bottom: 10px;
+	padding-right: 40px;
+	padding-left: 113px;
+
+	transition: left 1s;
+}
+
+#about:hover{transition: left 0.3s;}
+#blog:hover{transition: left 0.3s;}
+#projects:hover{transition: left 0.3s;}
+#resources:hover{transition: left 0.3s;}
+#contact:hover{transition: left 0.3s;}

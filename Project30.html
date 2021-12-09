@@ -35,16 +35,38 @@
 		function main()
 		{
 			let inputStr = prompt("Enter word: ");
+
 			let count = Number(prompt("Enter count: "));
 			stringMaker(inputStr, count);
 		}
 
 		function stringMaker(word,count)
 		{
-			for(let number = 1,number<=count,number++)
+			for(let x = 0 ; x<count ; x++)
 			{
-				word = word + word;
+				if(x%2 === 0)
+				{
+					document.writeln(word);
+				}
+				else
+				{
+					let reverse_InputStr = stringReverser(word);
+
+					document.writeln(reverse_InputStr);
+				}
 			}
+		}
+
+		function stringReverser(theWord)
+		{
+			let reversedString = "";
+
+			for(let number = theWord.length-1 ; number>=0 ; number--)
+			{
+				reversedString = reversedString + theWord.charAt(number);
+			}
+
+			return reversedString;
 		}
 
 		main();
