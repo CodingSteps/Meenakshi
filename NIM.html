@@ -59,6 +59,28 @@
 					alerter = alert("Now, it's my turn. I have removed 2 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 2 coins (2+2=4) from 6
 
 					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+
 				}
 				else if(choice === 3) // Second round for user (removes 3 coins)
 				{
@@ -66,34 +88,518 @@
 					alerter = alert("Now, it's my turn. I have removed 1 coin. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 1 coin (3+1=4) from 5
 
 					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+
 				}
 			}
 
 			else if(choice === 2) // First round for user (removes 2 coins)
-			{
-				let alerter = alert("You have removed 2 coins. 10 coins remain. 🔘🟡🟡🟡🟡🟡🟡🟡🟡🟡");
-				alerter = alert("Now, it's my turn. I have removed 2 coins. There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡");
+			{		
+				let alerter = alert("You have removed 2 coins. 10 coins remain. 🔘🟡🟡🟡🟡🟡🟡🟡🟡🟡"); // User has removed 2 coins from 12
+				alerter = alert("Now, it's my turn. I have removed 2 coins. There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡"); // Computer removes 2 coins (2+2=4) from 10
+
+				choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡")); // User's turn
+
+				// XXX
+
+				if(choice === 1) // Second round for user (removes 1 coin)
+					{
+					alerter = alert("You have removed 1 coin. 7 coins remain. 🔘🟡🟡🟡🟡🟡🟡"); // user removes 1 coin from 8
+					alerter = alert("Now, it's my turn. I have removed 3 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 3 coins (1+3=4) from 7
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
+				else if(choice === 2) // Second round for user (removes 2 coins)
+				{
+					let alerter = alert("You have removed 2 coins. 6 coins remain. 🔘🟡🟡🟡🟡🟡"); // user removes 2 coins from 8
+					alerter = alert("Now, it's my turn. I have removed 2 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 2 coins (2+2=4) from 6
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+
+				}
+				else if(choice === 3) // Second round for user (removes 3 coins)
+				{
+					let alerter = alert("You have removed 3 coins. 5 coins remain. 🔘🟡🟡🟡🟡"); // user removes 3 coins from 8
+					alerter = alert("Now, it's my turn. I have removed 1 coin. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 1 coin (3+1=4) from 5
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+					
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
 			}
 
 			else if(choice === 3) // First round for user (removes 3 coins)
 			{
 				let alerter = alert("You have removed 3 coins. 9 coins remain. 🔘🟡🟡🟡🟡🟡🟡🟡🟡");
 				alerter = alert("Now, it's my turn. I have removed 1 coin. There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡");
+
+				choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡")); // User's turn
+
+				// XXX
+
+				if(choice === 1) // Second round for user (removes 1 coin)
+				{
+					alerter = alert("You have removed 1 coin. 7 coins remain. 🔘🟡🟡🟡🟡🟡🟡"); // user removes 1 coin from 8
+					alerter = alert("Now, it's my turn. I have removed 3 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 3 coins (1+3=4) from 7
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
+				else if(choice === 2) // Second round for user (removes 2 coins)
+				{
+					let alerter = alert("You have removed 2 coins. 6 coins remain. 🔘🟡🟡🟡🟡🟡"); // user removes 2 coins from 8
+					alerter = alert("Now, it's my turn. I have removed 2 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 2 coins (2+2=4) from 6
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
+				else if(choice === 3) // Second round for user (removes 3 coins)
+				{
+					let alerter = alert("You have removed 3 coins. 5 coins remain. 🔘🟡🟡🟡🟡"); // user removes 3 coins from 8
+					alerter = alert("Now, it's my turn. I have removed 1 coin. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 1 coin (3+1=4) from 5
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+					
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
 			}
 		}
-
 
 		else if(starter.toLowerCase()==="no")
 		{
 			let alerter = alert("There are thirteen coins. If you are the one to pick the last coin (silver), then you win. 🔘🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡"); // Rules are explained
 
 			let choice = Number(prompt("I have removed 1 coin. There are twelve coins left. How many do you want to remove? (Minimum: 1, Maximum: 3) 🔘🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡")); // Computer has played, user picks to remove 1-3 coins
-		}
 
+			// XXX
 
-		else
-		{
-			starter = prompt("Kindly enter 'yes' if you want to start, and 'no' if you want me to."); // User has not entered a valid input
+			if(choice === 1) // First round for user (removes 1 coin)
+			{
+				let alerter = alert("You have removed 1 coin. 11 coins remain. 🔘🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡"); // User has removed 1 coin from 12
+				alerter = alert("Now, it's my turn. I have removed 3 coins. There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡"); // Computer removes 3 coins (1+3=4) from 11
+
+				choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡")); // User's turn
+
+				// XXX
+
+				if(choice === 1) // Second round for user (removes 1 coin)
+				{
+					alerter = alert("You have removed 1 coin. 7 coins remain. 🔘🟡🟡🟡🟡🟡🟡"); // user removes 1 coin from 8
+					alerter = alert("Now, it's my turn. I have removed 3 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 3 coins (1+3=4) from 7
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
+				else if(choice === 2) // Second round for user (removes 2 coins)
+				{
+					let alerter = alert("You have removed 2 coins. 6 coins remain. 🔘🟡🟡🟡🟡🟡"); // user removes 2 coins from 8
+					alerter = alert("Now, it's my turn. I have removed 2 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 2 coins (2+2=4) from 6
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+
+				}
+				else if(choice === 3) // Second round for user (removes 3 coins)
+				{
+					let alerter = alert("You have removed 3 coins. 5 coins remain. 🔘🟡🟡🟡🟡"); // user removes 3 coins from 8
+					alerter = alert("Now, it's my turn. I have removed 1 coin. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 1 coin (3+1=4) from 5
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+
+				}
+			}
+
+			else if(choice === 2) // First round for user (removes 2 coins)
+			{		
+				let alerter = alert("You have removed 2 coins. 10 coins remain. 🔘🟡🟡🟡🟡🟡🟡🟡🟡🟡"); // User has removed 2 coins from 12
+				alerter = alert("Now, it's my turn. I have removed 2 coins. There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡"); // Computer removes 2 coins (2+2=4) from 10
+
+				choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡")); // User's turn
+
+				// XXX
+
+				if(choice === 1) // Second round for user (removes 1 coin)
+					{
+					alerter = alert("You have removed 1 coin. 7 coins remain. 🔘🟡🟡🟡🟡🟡🟡"); // user removes 1 coin from 8
+					alerter = alert("Now, it's my turn. I have removed 3 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 3 coins (1+3=4) from 7
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
+				else if(choice === 2) // Second round for user (removes 2 coins)
+				{
+					let alerter = alert("You have removed 2 coins. 6 coins remain. 🔘🟡🟡🟡🟡🟡"); // user removes 2 coins from 8
+					alerter = alert("Now, it's my turn. I have removed 2 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 2 coins (2+2=4) from 6
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+
+				}
+				else if(choice === 3) // Second round for user (removes 3 coins)
+				{
+					let alerter = alert("You have removed 3 coins. 5 coins remain. 🔘🟡🟡🟡🟡"); // user removes 3 coins from 8
+					alerter = alert("Now, it's my turn. I have removed 1 coin. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 1 coin (3+1=4) from 5
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+					
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
+			}
+
+			else if(choice === 3) // First round for user (removes 3 coins)
+			{
+				let alerter = alert("You have removed 3 coins. 9 coins remain. 🔘🟡🟡🟡🟡🟡🟡🟡🟡");
+				alerter = alert("Now, it's my turn. I have removed 1 coin. There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡");
+
+				choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 8 coins left. 🔘🟡🟡🟡🟡🟡🟡🟡")); // User's turn
+
+				// XXX
+
+				if(choice === 1) // Second round for user (removes 1 coin)
+				{
+					alerter = alert("You have removed 1 coin. 7 coins remain. 🔘🟡🟡🟡🟡🟡🟡"); // user removes 1 coin from 8
+					alerter = alert("Now, it's my turn. I have removed 3 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 3 coins (1+3=4) from 7
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
+				else if(choice === 2) // Second round for user (removes 2 coins)
+				{
+					let alerter = alert("You have removed 2 coins. 6 coins remain. 🔘🟡🟡🟡🟡🟡"); // user removes 2 coins from 8
+					alerter = alert("Now, it's my turn. I have removed 2 coins. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 2 coins (2+2=4) from 6
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
+				else if(choice === 3) // Second round for user (removes 3 coins)
+				{
+					let alerter = alert("You have removed 3 coins. 5 coins remain. 🔘🟡🟡🟡🟡"); // user removes 3 coins from 8
+					alerter = alert("Now, it's my turn. I have removed 1 coin. There are 4 coins left. 🔘🟡🟡🟡"); // Computer removes 1 coin (3+1=4) from 5
+
+					choice = Number(prompt("Now, it is your turn. How many coin(s) do you want to remove? There are 4 coins left. 🔘🟡🟡🟡")); // Question for user
+					
+					// XXX
+
+					if(choice === 1) // Third round for user (removes 1 coin)
+					{
+						alerter = alert("You have removed 1 coin. 3 coins remain. 🔘🟡🟡"); // user removes 1 coin from 4
+
+						alerter = alert("Now, it's my turn. I have removed 3 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 2) // Third round for user (removes 2 coins)
+					{
+						alerter = alert("You have removed 2 coins. 2 coins remain. 🔘🟡"); // user removes 2 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 2 coins, along with the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+					else if(choice === 3) // Third round for user (removes 3 coins)
+					{
+						alerter = alert("You have removed 3 coins. 1 coin remains. 🔘"); // user removes 3 coins from 4
+
+						alerter = alert("Now, it's my turn. I have removed 1 coin- that is, the winning coin. Woo-hoo! 🥳 Don't worry though, refresh the page to try again."); // Computer wins
+					}
+				}
+			}
 		}
 
 	</script>
