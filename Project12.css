@@ -130,3 +130,15 @@ body
 #projects:hover{left: -40px; transition: left 0.3s;}
 #resources:hover{left: -40px; transition: left 0.3s;}
 #contact:hover{left: -40px; transition: left 0.3s;}
+
+#imgDiv
+{
+	width: 608px;
+	height: 599px;
+}
+
+#imageDiv img
+{
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nested For-Loops</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		/* // Code for making a triangle of symbols, with the number of '*' in a line is the same as the row number.
+
+		let i;
+		let j;
+		let symbol = "*";
+
+		for (i = 1; i <= 4; i++)
+		{
+			for(j = i; j >= 1; j--) // 'for(j = 1; j <= i; j++)' will also work as a condition for the inner for-loop.
+			{
+				document.writeln(symbol);
+			}
+
+			document.writeln('<br>');
+		} */
+
+		let a;
+		let b;
+		let symbol = "*";
+
+		function multiplicationTable(c)
+		{
+			for (a = 1; a <= c; a++)
+			{
+				for(b = 1; b <= c; b++)
+				{
+					document.writeln(a*b);
+				}
+
+				document.writeln('<br>');
+			}
+		}
+
+		multiplicationTable(6);
+
+	</script>
+
+</body>
+</html>

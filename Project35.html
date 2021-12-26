@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<!-- Write the code for the sampleQuiz3 function that has 3 parameters: start, end, and add. The function will print onto a line of the webpage 10 numbers starting with start and  the next number will be the previous number incremented by add. It will do the same for all the consecutive integers that come after start up to and including end.  For example, if the call is: 
+
+		sampleQuiz(5, 8, 2); 
+
+	The output will be:  
+
+		5 7 9 11 13 15 17 19 21 23 
+		6 8 10 12 14 16 18 20 22 24 
+		7 9 11 13 15 17 19 21 23 25 
+		8 10 12 14 16 18 20 22 24 26 
+
+	In the example above, 5 is the argument assigned to start, 8 is the argument assigned to end, and 2 is the argument add.  
+	Therefore, the first line has 5, followed by 7 (i.e. 5 +2), followed by 9 (i.e. 7+2), and so on. Notice there are 10 numbers per row. Same thing is happening in the other rows, until you get to the row that starts with 8 (value of end). 
+ 
+	As another example, if the call is: 
+ 
+		sampleQuiz(2, 6, 7); 
+ 
+	The output will be:  
+ 
+	2 9 16 23 30 37 44 51 58 65 
+	3 10 17 24 31 38 45 52 59 66 
+	4 11 18 25 32 39 46 53 60 67 
+	5 12 19 26 33 40 47 54 61 68 
+	6 13 20 27 34 41 48 55 62 69 
+
+	In the example above, 2 is the argument assigned to start, 6 is the argument assigned to end, and 7 is the argument add.  
+	Therefore, the first line has 2, followed by 9 ( i.e. 2 +7), followed by 16 (i.e. 9+7), and so on.  Notice there are 10 numbers per row. Same thing is happening in the other rows, until you get to the row that starts with 6 (value of end). 
+
+	You can assume that all parameters will be positive integers and that start <= end. You just need to write the code for the function.  You should not prompt for any values, the input are supplied as arguments. Furthermore, your function does not return a value to the caller. It will write to the webpage. Write the code in the provided box. -->
+
+	<script type="text/javascript">
+
+		let i;
+		let j;
+		let x = 0;
+
+		let start = Number(prompt("Enter a start value."));
+		let skip = Number(prompt("Enter an increment value."));
+		let end = Number(prompt("Enter an end value."));
+		
+		function sampleQuiz(start,skip,end)
+		{
+			for(i=start; i<=end; i++)
+			{
+				let number = i;
+
+				for(j=0; j<10; j++)
+				{	
+					document.writeln(i);
+
+					i = i + skip;
+				}
+
+				i = number;
+
+				document.writeln('<br>');
+			}
+		}
+
+		sampleQuiz(start, skip, end);
+
+	</script>
+
+</body>
+</html>

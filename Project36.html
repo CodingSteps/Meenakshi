@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<!-- In the main function, you will prompt for a start value and an end value. Use a loop to
+	validate that start <= end, and that start and end are not NaN. Re-prompt if you get invalid
+	values. Next prompt for a character. You can assume that you will get a 1 character string.
+
+	Your main function will call another function with the following prototype:
+		
+		function makeTriangle(start, end, myChar)
+
+	This function will not return anything but will display to the webpage a triangle with end rows.
+	A triangle just means that the first row has one character, the second row has 2 characters…
+	the nth row has n characters. You will use * for all rows before start. Starting with row
+	start, you will alternate between printing the row number or the character input by the user.
+	For example, if the call to makeTriangle is:
+		
+		makeTriangle(4, 8, "?");
+	
+	The output will be:
+	
+	*
+	* *
+	* * *
+	4 4 4 4
+	? ? ? ? ?
+	6 6 6 6 6 6
+	? ? ? ? ? ? ?
+	8 8 8 8 8 8 8 8 -->
+
+	<script type="text/javascript">
+		
+		let startVal = Number(prompt("Please enter the start value."));
+		let endVal = Number(prompt("Please enter the end value."));
+		let symbol = prompt("Please enter a symbol.");
+
+		let i;
+		let j;
+		let star = "*";
+
+		function makeTriangle(start,character,end)
+		{
+			let p = 1;
+
+			for (i = 1; i <= end; i++)
+			{
+				for(j = i; j >= 1; j--) // 'for(j = 1; j <= i; j++)' will also work as a condition for the inner for-loop.
+				{
+					if(i<start)
+					{
+						document.writeln(star);
+					}
+					else
+					{
+						if(p%2 !== 0)
+						{
+							document.writeln(i);
+						}
+						else
+						{
+								document.writeln(character);
+						}
+					}
+
+					// put p++ here if you want to alternate characters (after the '*' triangle) instead.
+				}
+
+				p++;
+
+				document.writeln('<br>');	
+			}
+		}
+		
+		makeTriangle(startVal,symbol,endVal);
+
+	</script>
+	
+
+</body>
+</html>
