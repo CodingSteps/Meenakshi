@@ -2,13 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Collatz Conjecture</title>
+	<title>Collatz Sequence</title>
 </head>
 <body>
 
 	<script type="text/javascript">
 		
-		alert("In the Collatz Conjecture (also known as '3n+1') a 'seed' number is fed into the algorithm. If the seed is even, then it is divided by 2. If it is odd, it is multiplied by 3 then incremented by 1. The conjecture states that every natural-number seed will end up in the loop 4 → 2 → 1 (since [3*1]+1 brings us back to 4). To prevent infinite looping, this program stops at 1. If you enter 0, you get into a 0 → 0 loop. Try planting a negative-integer seed as well.")
+		alert("In the Collatz Sequence (also known as '3n+1') a 'seed' number is fed into the algorithm. If the seed is even, then it is divided by 2. If it is odd, it is multiplied by 3 then incremented by 1. The Collatz Conjecture states that every natural-number seed will end up in the loop 4 → 2 → 1 (since [3*1]+1 brings us back to 4). To prevent infinite looping, this program stops at 1. If you enter 0, you get into a 0 → 0 loop. Try planting a negative-integer seed as well.")
 			
 		let seed = Number(prompt("Enter a seed number."));
 
@@ -20,7 +20,7 @@
 
 			if(n<0)
 			{
-				alert("You have entered a negative integer. If you enter a negative integer into the Collatz Conjecture algorithm, you wil end up with one of three loops. The 3 possible loops are: a) -1 → -2; b) -5 → -14 → -7 → -20 → -10 and c) -17 → -50 → -25 → -74 → -37 → -110 → -55 → -164 → -41 → -122 → -61 → -182 → -91 → -272 → -136 → -68 → -34.");
+				alert("You have entered a negative integer. If you enter a negative integer into the Collatz Sequence algorithm, you wil end up with one of three loops. The 3 possible loops are: a) -1 → -2; b) -5 → -14 → -7 → -20 → -10 and c) -17 → -50 → -25 → -74 → -37 → -110 → -55 → -164 → -41 → -122 → -61 → -182 → -91 → -272 → -136 → -68 → -34.");
 
 				while (n !== 1 && n < 0) // while we do not reach 1 and the input < 0
 				{
