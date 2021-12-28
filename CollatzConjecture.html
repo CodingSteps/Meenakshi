@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Collatz Conjecture</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		alert("In the Collatz Conjecture (also known as '3n+1') a 'seed' number is fed into the algorithm. If the seed is even, then it is divided by 2. If it is odd, it is multiplied by 3 then incremented by 1. The conjecture states that every natural-number seed will end up in the loop 4 → 2 → 1 (since [3*1]+1 brings us back to 4). To prevent infinite looping, this program stops at 1. If you enter 0, you get into a 0 → 0 loop. Try planting a negative-integer seed as well.")
+			
+		let seed = Number(prompt("Enter a seed number."));
+
+		// Javascript program to print Collatz sequence
+		
+		function printCollatz(n)
+		{
+			// We simply follow steps
+
+			if(n<0)
+			{
+				alert("You have entered a negative integer. If you enter a negative integer into the Collatz Conjecture algorithm, you wil end up with one of three loops. The 3 possible loops are: a) -1 → -2; b) -5 → -14 → -7 → -20 → -10 and c) -17 → -50 → -25 → -74 → -37 → -110 → -55 → -164 → -41 → -122 → -61 → -182 → -91 → -272 → -136 → -68 → -34.");
+
+				while (n !== 1 && n < 0) // while we do not reach 1 and the input < 0
+				{
+					document.writeln(n);
+					document.writeln('<br>');
+
+					if ((n & 1) !== 0) // If n is odd
+					{
+						n = (3*n) + 1;
+					}
+					else // If even
+					{
+						n = parseInt(n/2, 10);
+					}
+
+					if(n === -1 || n === -5 || n === -17)
+					{
+						break;
+					}
+				}
+			}
+			
+			while (n !== 1 && n >= 0) // while we do not reach 1 and the input is < 0
+			{
+				document.writeln(n);
+				document.writeln('<br>');
+
+				if(n === 0)
+				{
+					document.writeln(n);
+					document.writeln('<br');
+					document.writeln(n);
+
+					break;
+				}
+				else
+				{
+					if ((n & 1) !== 0) // If n is odd
+					{
+						n = (3*n) + 1;
+					}
+					else // If even
+					{
+						n = parseInt(n/2, 10);
+					}
+				}
+			}
+ 
+			document.writeln(n); // Print 1 at the end
+
+		}
+ 
+	printCollatz(seed);
+
+	/* Original code that did not work 
+
+	if(seed%2)
+			{
+				hello:
+				while(seed%2 === 0)
+				{
+					seed = seed/2;
+					console.log(seed);
+
+					if(seed = 1)
+					{
+						break;
+					}
+					else if(seed%2 !== 0)
+					{
+						continue;
+					}
+				}
+
+				while(seed%2 !== 0)
+				{
+					seed = (3*seed)+1;
+					console.log(seed);
+
+					if(seed = 1)
+					{
+						break;
+					}
+					else if(seed%2 === 0)
+					{
+						break hello;
+					}
+				}
+			}
+			else
+			{
+				while(seed%2 !== 0)
+				{
+					seed = (3*seed)+1;
+					console.log(seed);
+
+					if(seed = 1)
+					{
+						break;
+					}
+					else if(seed%2 === 0)
+					{
+						continue;
+					}
+				}
+
+				while(seed%2 === 0)
+				{
+					seed = seed/2;
+					console.log(seed);
+
+					if(seed = 1)
+					{
+						break;
+					}
+					else if(seed%2 !== 0)
+					{
+						break hello;
+					}
+				}
+			} */
+
+	</script>
+
+</body>
+</html>

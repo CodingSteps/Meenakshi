@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Program #3</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		/* Program #3:
+
+		Do the program#2 with functions:
+
+			displayTable(2,8)  // get the input values 2 and 8 using prompt from user and pass the variables while calling the function
+
+		Output should be, in each row, 10 multiplication table values should be displayed. For example, if displayTable(2,8), then,
+
+			2 4 6 8  10  12 14 16 18 20
+			3 6 9 12 15 18  21 24 27 30
+			...
+			8 16 24 32 40 48 56 64 72 80 */
+
+			function theMultiplier()
+			{
+				let startVal = Number(prompt("Enter a number to start with."));
+				let endVal = Number(prompt("Enter a number to end with."));
+
+				let a;
+				let b;
+
+				for (a = startVal; a <= endVal; a++)
+				{
+					for(b = 1; b <= 10; b++)
+					{
+						document.writeln(a*b);
+					}
+
+					document.writeln('<br>');
+				}
+			}
+
+			theMultiplier();
+
+	</script>
+
+</body>
+</html>
