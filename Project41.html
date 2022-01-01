@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exam: Question #17</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		/* Finish the function below. You can assume num 1 and num 2 will be positive integers such that num 1 <= num 2 . The function will display to the webpage a table where each row is the multiples of an integer from 1 * the integer up to 10 * the integer. The first row will contain the multiples of num1 , and subsequent rows will be the multiples of the integers following num1 until the last row which will have the multiples of num2 . For example, the following call: printTable(7, 10); will produce the table below:
+
+			function printTable(num1, num2)
+			{
+				document.writeln("<table border='10'>");
+				document.writeln("<caption><b>Multiplication Table</b></caption>");
+
+
+
+
+
+
+
+				 document.writeln("</table>");
+			} */
+		
+		function printTable(num1, num2)
+		{
+			document.writeln("<table border='10'>");
+
+			document.writeln("<caption><b>Multiplication Table</b></caption>");
+
+			for (a = num1; a <= num2; a++)
+			{
+				document.writeln('<tr>');
+
+				for(b = 1; b <= 10; b++)
+				{
+					document.writeln('<td>');
+					document.writeln(a*b);
+					document.writeln('</td>');
+				}
+
+				document.writeln('</tr>');
+			}
+
+			document.writeln("</table>");
+		}
+
+		printTable(7,10);
+
+	</script>
+
+</body>
+</html>

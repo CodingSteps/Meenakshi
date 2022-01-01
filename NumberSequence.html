@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Number Sequence</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		// Generate the sequence of numbers that, when appearing in the Collatz sequence, lead to the next value to be a power of 4, bringing about the 4-2-1 loop.
+		
+		for(let i = 0; i<=100; i++)
+		{
+			// Find n, so that n = (4^x-1)/3 (that is, rearrangement of (3n+1)/2 = 2^x)
+
+			let n = ((4**i)-1)/3;
+
+			document.writeln(n);
+			document.writeln('<br>');
+		}
+
+	</script>
+
+</body>
+</html>
