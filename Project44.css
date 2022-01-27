@@ -1,0 +1,15 @@
+body
+{
+	font-family: 'Indie Flower', cursive;
+}
+
+#mainNavbar
+{
+	background-color: #d1c2f0;
+	height: 80px;
+}
+
+#navbar
+{
+	font-size: 28px;
+}
