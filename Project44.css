@@ -23,4 +23,19 @@ body
 {
 	padding: 20px;
 	background-color: #d1c2f0;
+	font-size: 18px;
+
+	width: 85%;
+}
+
+#section2-2
+{
+	width: 15%;
+	margin: 0px;
+}
+
+#section2-text
+{
+	width: 15%;
+	display: inline;
 }
