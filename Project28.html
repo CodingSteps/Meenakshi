@@ -27,15 +27,15 @@
 
 			const theMultiplier = (x) =>
 			{
-    			for(let number = 1 ; number <= 10 ; number++)
-    			{
-    				answer = answer + x;
-    				$('#outputText').append(`${times} x ${number} = ${answer}`);
+				for(let number = 1 ; number <= 10 ; number++)
+				{
+					answer = answer + x;
+					$('#outputText').append(`${times} x ${number} = ${answer}`);
 
-    				let breakElement = $("<br>");
-    				$('#outputText').append(breakElement);
+					let breakElement = $("<br>");
+					$('#outputText').append(breakElement);
 
-    			}
+				}
 			}
 
 			theMultiplier(times);

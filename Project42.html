@@ -16,6 +16,11 @@
 
 	<nav class="navbar navbar-inverse myDiv1">
   		<div class="container-fluid">
+		</div>
+	</nav>
+
+	<img src="https://wallpaperaccess.com/full/1809367.jpg" style="width: 100%; height: 728px; opacity: 70%;">
+
     		<div class="navbar-header">
 
 				<a class="navbar-brand" href="#">Base Converter</a>
@@ -24,52 +29,94 @@
     		
     		<ul class="nav navbar-nav">
       			
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Binary</a></li>
-				<li><a href="#">Octal</a></li>
-				<li><a href="#">Hexadecimal</a></li>
+				<li><button id="bin" onclick="myFunction()">Binary</button></li>
+				<!-- <li><a href="#" id="oct">Octal</a></li>
+				<li><a href="#" id="hex">Hexadecimal</a></li> -->
 	
 			</ul>
-		</div>
-	</nav>
+	<input type="text" name="textbox" id="myInput" placeholder="Enter a Number">
 
-	<img src="https://wallpaperaccess.com/full/1809367.jpg" style="width: 100%; height: 728px; opacity: 70%;">
-
-	<input type="text" name="textbox">
-
-	<input type="text" id="myInput">
-
-	<button onclick="myFunction()">Copy Text</button>
+	<input type="text" id="myOutput" placeholder="In Binary">
 
 	<script type="text/javascript">
-		
-		function decimalToBinary(n) // We wallow in sadness (in binary)
-		{
-			answer = n.toString(2); // Converts the number to base 2 and to string
-		}
 
-		function decimalToOctal(n) // We wallow in distress (in octal)
-		{
-			answer = n.toString(8); // Converts the number to base 8 and to string
-		}
+		$(document).ready(function () {
 
-		function decimalToHexadecimal(n) // We wallow in fear (in hexadecimal)
-		{
-			answer = n.toString(16); // Converts the number to base 16 and to string
-		}
+  function baseConverter(base,number)
+  {
+    let answer = [];
+    let oneVal;
 
-		function myFunction()
-		{
-  			// Get the text field
-  			var copyText = document.getElementById("myInput");
+    for(let i = 100; i>=0; i--)
+    {
+      oneVal = number%base;
 
-			// Select the text field
-			copyText.select();
-			copyText.setSelectionRange(0, 99999); // For mobile devices
+      if(oneVal === 10)
+      {
+       oneVal = "A";
+      }
+      else if(oneVal === 11)
+      {
+        oneVal = "B";
+      }
+      else if(oneVal === 12)
+      {
+        oneVal = "C";
+      }
+      else if(oneVal === 13)
+      {
+        oneVal = "D";
+      }
+      else if(oneVal === 14)
+      {
+        oneVal = "E";
+      }
+      else if(oneVal === 15)
+      {
+        oneVal = "F";
+      }
 
-			// Copy the text inside the text field
-			navigator.clipboard.writeText(copyText.value);
-		}
+      answer.unshift(oneVal);
+
+      number = (number-(number%base))/base;
+
+      if(number/base === 0)
+      {
+        break;
+      }
+    }
+
+    answer = answer.toString();
+    answer = answer.replaceAll(',','')
+    document.getElementById("myOutput").value = answer;
+  }
+
+  $('#convert').click(function () {
+
+    let num = $("#myInput").val();
+
+    if (isNaN(num) === true) {
+      console.log("Please enter a number only.");
+    }
+
+    let choice = $('input[name="radioBtn"]:checked').val();
+    
+    if(choice === "binary")
+    {
+      baseConverter(2,num);
+    }
+    else if(choice === "octal")
+    {
+      baseConverter(8,num);
+    }
+    else
+    {
+      baseConverter(16,num);
+    }
+
+  });
+
+});
 
 	</script>
 
