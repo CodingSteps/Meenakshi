@@ -16,5 +16,11 @@ body
 
 .sliderImg
 {
-	height: 1280px;
+	height: 700px;
+}
+
+#section2
+{
+	padding: 20px;
+	background-color: #d1c2f0;
 }
